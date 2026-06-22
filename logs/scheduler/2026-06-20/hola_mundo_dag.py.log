@@ -90,3 +90,66 @@
 [2026-06-20T15:25:03.730+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:25:03.730+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2026-06-20T15:25:03.751+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:25:03.750+0000] {dag.py:4180} INFO - Setting next_dagrun for hola_mundo_dag to None, run_after=None
 [2026-06-20T15:25:03.775+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hola_mundo_dag.py took 0.211 seconds
+[2026-06-20T15:25:34.743+0000] {processor.py:186} INFO - Started process (PID=241) to work on /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:25:34.745+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hola_mundo_dag.py for tasks to queue
+[2026-06-20T15:25:34.752+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:25:34.751+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:25:34.794+0000] {processor.py:925} INFO - DAG(s) 'hola_mundo_dag' retrieved from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:25:34.865+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:25:34.865+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-20T15:25:34.895+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:25:34.895+0000] {dag.py:4180} INFO - Setting next_dagrun for hola_mundo_dag to None, run_after=None
+[2026-06-20T15:25:34.939+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hola_mundo_dag.py took 0.210 seconds
+[2026-06-20T15:26:05.093+0000] {processor.py:186} INFO - Started process (PID=246) to work on /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:26:05.095+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hola_mundo_dag.py for tasks to queue
+[2026-06-20T15:26:05.100+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:26:05.100+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:26:05.141+0000] {processor.py:925} INFO - DAG(s) 'hola_mundo_dag' retrieved from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:26:05.209+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:26:05.208+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-20T15:26:05.238+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:26:05.237+0000] {dag.py:4180} INFO - Setting next_dagrun for hola_mundo_dag to None, run_after=None
+[2026-06-20T15:26:05.274+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hola_mundo_dag.py took 0.193 seconds
+[2026-06-20T15:26:36.172+0000] {processor.py:186} INFO - Started process (PID=251) to work on /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:26:36.175+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hola_mundo_dag.py for tasks to queue
+[2026-06-20T15:26:36.182+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:26:36.181+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:26:36.238+0000] {processor.py:925} INFO - DAG(s) 'hola_mundo_dag' retrieved from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:26:36.307+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:26:36.306+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-20T15:26:36.339+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:26:36.339+0000] {dag.py:4180} INFO - Setting next_dagrun for hola_mundo_dag to None, run_after=None
+[2026-06-20T15:26:36.384+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hola_mundo_dag.py took 0.230 seconds
+[2026-06-20T15:27:07.102+0000] {processor.py:186} INFO - Started process (PID=256) to work on /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:27:07.107+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hola_mundo_dag.py for tasks to queue
+[2026-06-20T15:27:07.122+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:27:07.121+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:27:07.222+0000] {processor.py:925} INFO - DAG(s) 'hola_mundo_dag' retrieved from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:27:07.396+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:27:07.395+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-20T15:27:07.482+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:27:07.481+0000] {dag.py:4180} INFO - Setting next_dagrun for hola_mundo_dag to None, run_after=None
+[2026-06-20T15:27:07.567+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hola_mundo_dag.py took 0.495 seconds
+[2026-06-20T15:27:38.417+0000] {processor.py:186} INFO - Started process (PID=261) to work on /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:27:38.422+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hola_mundo_dag.py for tasks to queue
+[2026-06-20T15:27:38.436+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:27:38.434+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:27:38.490+0000] {processor.py:925} INFO - DAG(s) 'hola_mundo_dag' retrieved from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:27:38.563+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:27:38.562+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-20T15:27:38.602+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:27:38.601+0000] {dag.py:4180} INFO - Setting next_dagrun for hola_mundo_dag to None, run_after=None
+[2026-06-20T15:27:38.658+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hola_mundo_dag.py took 0.277 seconds
+[2026-06-20T15:28:09.388+0000] {processor.py:186} INFO - Started process (PID=269) to work on /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:28:09.391+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hola_mundo_dag.py for tasks to queue
+[2026-06-20T15:28:09.398+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:28:09.397+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:28:09.471+0000] {processor.py:925} INFO - DAG(s) 'hola_mundo_dag' retrieved from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:28:09.549+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:28:09.548+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-20T15:28:09.584+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:28:09.584+0000] {dag.py:4180} INFO - Setting next_dagrun for hola_mundo_dag to None, run_after=None
+[2026-06-20T15:28:09.635+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hola_mundo_dag.py took 0.258 seconds
+[2026-06-20T15:28:40.267+0000] {processor.py:186} INFO - Started process (PID=274) to work on /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:28:40.273+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hola_mundo_dag.py for tasks to queue
+[2026-06-20T15:28:40.281+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:28:40.280+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:28:40.408+0000] {processor.py:925} INFO - DAG(s) 'hola_mundo_dag' retrieved from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:28:40.461+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:28:40.461+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-20T15:28:40.485+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:28:40.485+0000] {dag.py:4180} INFO - Setting next_dagrun for hola_mundo_dag to None, run_after=None
+[2026-06-20T15:28:40.513+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hola_mundo_dag.py took 0.279 seconds
+[2026-06-20T15:29:11.270+0000] {processor.py:186} INFO - Started process (PID=279) to work on /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:29:11.273+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hola_mundo_dag.py for tasks to queue
+[2026-06-20T15:29:11.281+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:29:11.280+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:29:11.358+0000] {processor.py:925} INFO - DAG(s) 'hola_mundo_dag' retrieved from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:29:11.450+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:29:11.449+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-20T15:29:11.662+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:29:11.660+0000] {dag.py:4180} INFO - Setting next_dagrun for hola_mundo_dag to None, run_after=None
+[2026-06-20T15:29:11.761+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hola_mundo_dag.py took 0.507 seconds
+[2026-06-20T15:29:42.862+0000] {processor.py:186} INFO - Started process (PID=284) to work on /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:29:42.870+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hola_mundo_dag.py for tasks to queue
+[2026-06-20T15:29:42.879+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:29:42.878+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:29:42.914+0000] {processor.py:925} INFO - DAG(s) 'hola_mundo_dag' retrieved from /opt/airflow/dags/hola_mundo_dag.py
+[2026-06-20T15:29:42.983+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:29:42.983+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-20T15:29:43.008+0000] {logging_mixin.py:190} INFO - [2026-06-20T15:29:43.008+0000] {dag.py:4180} INFO - Setting next_dagrun for hola_mundo_dag to None, run_after=None
+[2026-06-20T15:29:43.040+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hola_mundo_dag.py took 0.190 seconds

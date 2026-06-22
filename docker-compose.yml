@@ -22,6 +22,7 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
+      - ./data:/opt/airflow/data
       - ./plugins:/opt/airflow/plugins
 
     depends_on:
@@ -29,6 +30,7 @@ services:
 
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW_CONN_POSTGRES_DESTINO: "postgresql://coder-ra-c6:Riwi2026**@15.204.173.204:6432/postgres"
 
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
 
@@ -68,6 +70,7 @@ services:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
 
     command: webserver
 
@@ -91,6 +94,7 @@ services:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
 
     command: scheduler
 
