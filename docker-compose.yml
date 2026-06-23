@@ -16,24 +16,28 @@ services:
       - postgres_data:/var/lib/postgresql/data
 
   airflow-init:
-    image: apache/airflow:2.10.5
+    build: .
     user: "0:0"
-    
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./data:/opt/airflow/data
       - ./plugins:/opt/airflow/plugins
 
+
     depends_on:
       - postgres
 
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW_CONN_POSTGRES_DESTINO: "postgresql://coder-ra-c6:Riwi2026**@15.204.173.204:6432/postgres"
-
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-
+      AIRFLOW_CONN_POSTGRES_DESTINO: "postgresql://postgres.wobqhsfcniawpssamvbu:Ppf6DhxBu7erDQmA@aws-1-us-east-2.pooler.supabase.com:5432/postgres?sslmode=require"
+      KAGGLE_USERNAME: ${KAGGLE_USERNAME}
+      KAGGLE_KEY: ${KAGGLE_KEY}
     command: >
       bash -c "
       airflow db migrate &&
@@ -47,10 +51,12 @@ services:
       "
 
   airflow-webserver:
-    image: apache/airflow:2.10.5
+    build: .
     user: "0:0"
-
     container_name: airflow_webserver
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
 
     depends_on:
       - postgres
@@ -61,23 +67,25 @@ services:
       - "8080:8080"
 
     environment:
-
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-
+      AIRFLOW_CONN_POSTGRES_DESTINO: "postgresql://postgres.wobqhsfcniawpssamvbu:Ppf6DhxBu7erDQmA@aws-1-us-east-2.pooler.supabase.com:5432/postgres?sslmode=require"
+      KAGGLE_USERNAME: ${KAGGLE_USERNAME}
+      KAGGLE_KEY: ${KAGGLE_KEY}
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
       - ./data:/opt/airflow/data
-
     command: webserver
 
   airflow-scheduler:
-    image: apache/airflow:2.10.5
+    build: .
     user: "0:0"
     container_name: airflow_scheduler
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
 
     depends_on:
       - postgres
@@ -85,11 +93,11 @@ services:
     restart: always
 
     environment:
-
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-
+      AIRFLOW_CONN_POSTGRES_DESTINO: "postgresql://postgres.wobqhsfcniawpssamvbu:Ppf6DhxBu7erDQmA@aws-1-us-east-2.pooler.supabase.com:5432/postgres?sslmode=require"
+      KAGGLE_USERNAME: ${KAGGLE_USERNAME}
+      KAGGLE_KEY: ${KAGGLE_KEY}
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs

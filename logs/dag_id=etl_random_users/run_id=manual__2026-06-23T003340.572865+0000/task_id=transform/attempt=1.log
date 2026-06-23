@@ -1,0 +1,26 @@
+[2026-06-23T00:33:59.218+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-23T00:33:59.275+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_random_users.transform manual__2026-06-23T00:33:40.572865+00:00 [queued]>
+[2026-06-23T00:33:59.302+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_random_users.transform manual__2026-06-23T00:33:40.572865+00:00 [queued]>
+[2026-06-23T00:33:59.306+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2026-06-23T00:33:59.338+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): transform> on 2026-06-23 00:33:40.572865+00:00
+[2026-06-23T00:33:59.360+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_random_users', 'transform', 'manual__2026-06-23T00:33:40.572865+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/hola_mundo_dag.py', '--cfg-path', '/tmp/tmpkd37a0sz']
+[2026-06-23T00:33:59.370+0000] {standard_task_runner.py:105} INFO - Job 108: Subtask transform
+[2026-06-23T00:33:59.372+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=520) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-23T00:33:59.374+0000] {standard_task_runner.py:72} INFO - Started process 522 to run task
+[2026-06-23T00:33:59.534+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_random_users.transform manual__2026-06-23T00:33:40.572865+00:00 [running]> on host 2739510d87fa
+[2026-06-23T00:33:59.786+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='juan_camilo' AIRFLOW_CTX_DAG_ID='etl_random_users' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2026-06-23T00:33:40.572865+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-23T00:33:40.572865+00:00'
+[2026-06-23T00:33:59.792+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-23T00:34:00.798+0000] {hola_mundo_dag.py:108} INFO - Transformando 5000 usuarios...
+[2026-06-23T00:34:00.841+0000] {hola_mundo_dag.py:130} INFO - Shape inicial: (5000, 13)
+[2026-06-23T00:34:00.902+0000] {hola_mundo_dag.py:159} INFO - Shape final tras transformaciones: (5000, 15)
+[2026-06-23T00:34:00.906+0000] {hola_mundo_dag.py:160} INFO - Segmentos:
+segmento_edad
+Maduro    1751
+Adulto    1732
+Senior    1517
+[2026-06-23T00:34:01.296+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-06-23T00:34:01.319+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-23T00:34:01.320+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_random_users, task_id=transform, run_id=manual__2026-06-23T00:33:40.572865+00:00, execution_date=20260623T003340, start_date=20260623T003359, end_date=20260623T003401
+[2026-06-23T00:34:01.407+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-23T00:34:01.464+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-23T00:34:01.468+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

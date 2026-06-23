@@ -1,0 +1,20 @@
+[2026-06-23T00:33:53.904+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-23T00:33:53.959+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_random_users.save_raw manual__2026-06-23T00:33:40.572865+00:00 [queued]>
+[2026-06-23T00:33:53.987+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_random_users.save_raw manual__2026-06-23T00:33:40.572865+00:00 [queued]>
+[2026-06-23T00:33:53.989+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2026-06-23T00:33:54.013+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): save_raw> on 2026-06-23 00:33:40.572865+00:00
+[2026-06-23T00:33:54.026+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_random_users', 'save_raw', 'manual__2026-06-23T00:33:40.572865+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/hola_mundo_dag.py', '--cfg-path', '/tmp/tmpv3k3x4np']
+[2026-06-23T00:33:54.034+0000] {standard_task_runner.py:105} INFO - Job 106: Subtask save_raw
+[2026-06-23T00:33:54.035+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=512) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-23T00:33:54.036+0000] {standard_task_runner.py:72} INFO - Started process 515 to run task
+[2026-06-23T00:33:54.185+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_random_users.save_raw manual__2026-06-23T00:33:40.572865+00:00 [running]> on host 2739510d87fa
+[2026-06-23T00:33:54.455+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='juan_camilo' AIRFLOW_CTX_DAG_ID='etl_random_users' AIRFLOW_CTX_TASK_ID='save_raw' AIRFLOW_CTX_EXECUTION_DATE='2026-06-23T00:33:40.572865+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-23T00:33:40.572865+00:00'
+[2026-06-23T00:33:54.457+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-23T00:33:56.669+0000] {hola_mundo_dag.py:95} INFO - ✅ JSON crudo guardado: /opt/***/data/raw/usuarios_raw_2026-06-23_00-33-54.json
+[2026-06-23T00:33:56.670+0000] {hola_mundo_dag.py:96} INFO -    Registros: 5000
+[2026-06-23T00:33:56.681+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-06-23T00:33:56.697+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-23T00:33:56.698+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_random_users, task_id=save_raw, run_id=manual__2026-06-23T00:33:40.572865+00:00, execution_date=20260623T003340, start_date=20260623T003353, end_date=20260623T003356
+[2026-06-23T00:33:56.786+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-23T00:33:56.825+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-23T00:33:56.830+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,27 @@
+[2026-06-23T20:36:47.041+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-23T20:36:47.053+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_random_users.notify manual__2026-06-23T20:32:03.889638+00:00 [queued]>
+[2026-06-23T20:36:47.059+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_random_users.notify manual__2026-06-23T20:32:03.889638+00:00 [queued]>
+[2026-06-23T20:36:47.059+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2026-06-23T20:36:47.066+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): notify> on 2026-06-23 20:32:03.889638+00:00
+[2026-06-23T20:36:47.072+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_random_users', 'notify', 'manual__2026-06-23T20:32:03.889638+00:00', '--job-id', '76', '--raw', '--subdir', 'DAGS_FOLDER/hola_mundo_dag.py', '--cfg-path', '/tmp/tmp9_zxahzu']
+[2026-06-23T20:36:47.073+0000] {standard_task_runner.py:105} INFO - Job 76: Subtask notify
+[2026-06-23T20:36:47.074+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=359) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-23T20:36:47.074+0000] {standard_task_runner.py:72} INFO - Started process 363 to run task
+[2026-06-23T20:36:47.100+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_random_users.notify manual__2026-06-23T20:32:03.889638+00:00 [running]> on host 8884758d4df3
+[2026-06-23T20:36:47.149+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='juan_camilo' AIRFLOW_CTX_DAG_ID='etl_random_users' AIRFLOW_CTX_TASK_ID='notify' AIRFLOW_CTX_EXECUTION_DATE='2026-06-23T20:32:03.889638+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-23T20:32:03.889638+00:00'
+[2026-06-23T20:36:47.149+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-23T20:36:47.169+0000] {hola_mundo_dag.py:324} INFO - ==================================================
+[2026-06-23T20:36:47.169+0000] {hola_mundo_dag.py:325} INFO - 📊 RESUMEN DEL PIPELINE ETL — USUARIOS CRM
+[2026-06-23T20:36:47.169+0000] {hola_mundo_dag.py:326} INFO - ==================================================
+[2026-06-23T20:36:47.169+0000] {hola_mundo_dag.py:327} INFO -   Total procesados : 100
+[2026-06-23T20:36:47.169+0000] {hola_mundo_dag.py:328} INFO -   Insertados       : 0
+[2026-06-23T20:36:47.169+0000] {hola_mundo_dag.py:329} INFO -   Actualizados     : 100
+[2026-06-23T20:36:47.169+0000] {hola_mundo_dag.py:330} INFO -   CSV generado     : /opt/***/data/clean/usuarios_crm_2026-06-23_20-36-46.csv
+[2026-06-23T20:36:47.170+0000] {hola_mundo_dag.py:331} INFO -   Fecha ejecución  : 2026-06-23 20:36:47
+[2026-06-23T20:36:47.170+0000] {hola_mundo_dag.py:332} INFO - ==================================================
+[2026-06-23T20:36:47.170+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-06-23T20:36:47.176+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-23T20:36:47.176+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_random_users, task_id=notify, run_id=manual__2026-06-23T20:32:03.889638+00:00, execution_date=20260623T203203, start_date=20260623T203647, end_date=20260623T203647
+[2026-06-23T20:36:47.207+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-23T20:36:47.218+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-23T20:36:47.219+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

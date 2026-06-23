@@ -1,0 +1,30 @@
+[2026-06-23T00:41:56.809+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-23T00:41:56.866+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_random_users.extract manual__2026-06-23T00:41:50.765275+00:00 [queued]>
+[2026-06-23T00:41:56.895+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_random_users.extract manual__2026-06-23T00:41:50.765275+00:00 [queued]>
+[2026-06-23T00:41:56.897+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2026-06-23T00:41:56.937+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): extract> on 2026-06-23 00:41:50.765275+00:00
+[2026-06-23T00:41:56.967+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_random_users', 'extract', 'manual__2026-06-23T00:41:50.765275+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/hola_mundo_dag.py', '--cfg-path', '/tmp/tmpwp38wfe3']
+[2026-06-23T00:41:56.972+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=654) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-23T00:41:56.974+0000] {standard_task_runner.py:105} INFO - Job 119: Subtask extract
+[2026-06-23T00:41:56.976+0000] {standard_task_runner.py:72} INFO - Started process 656 to run task
+[2026-06-23T00:41:57.087+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_random_users.extract manual__2026-06-23T00:41:50.765275+00:00 [running]> on host 2739510d87fa
+[2026-06-23T00:41:57.229+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='juan_camilo' AIRFLOW_CTX_DAG_ID='etl_random_users' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2026-06-23T00:41:50.765275+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-23T00:41:50.765275+00:00'
+[2026-06-23T00:41:57.233+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-23T00:41:57.258+0000] {hola_mundo_dag.py:63} INFO - Iniciando extracción de 5000 usuarios...
+[2026-06-23T00:41:58.217+0000] {hola_mundo_dag.py:73} INFO -   Batch 1/10 — 500 usuarios obtenidos
+[2026-06-23T00:41:59.004+0000] {hola_mundo_dag.py:73} INFO -   Batch 2/10 — 500 usuarios obtenidos
+[2026-06-23T00:41:59.532+0000] {hola_mundo_dag.py:73} INFO -   Batch 3/10 — 500 usuarios obtenidos
+[2026-06-23T00:42:00.039+0000] {hola_mundo_dag.py:73} INFO -   Batch 4/10 — 500 usuarios obtenidos
+[2026-06-23T00:42:00.603+0000] {hola_mundo_dag.py:73} INFO -   Batch 5/10 — 500 usuarios obtenidos
+[2026-06-23T00:42:01.157+0000] {hola_mundo_dag.py:73} INFO -   Batch 6/10 — 500 usuarios obtenidos
+[2026-06-23T00:42:01.775+0000] {hola_mundo_dag.py:73} INFO -   Batch 7/10 — 500 usuarios obtenidos
+[2026-06-23T00:42:02.301+0000] {hola_mundo_dag.py:73} INFO -   Batch 8/10 — 500 usuarios obtenidos
+[2026-06-23T00:42:04.968+0000] {hola_mundo_dag.py:73} INFO -   Batch 9/10 — 500 usuarios obtenidos
+[2026-06-23T00:42:05.554+0000] {hola_mundo_dag.py:73} INFO -   Batch 10/10 — 500 usuarios obtenidos
+[2026-06-23T00:42:05.556+0000] {hola_mundo_dag.py:75} INFO - Extracción completa: 5000 usuarios en total.
+[2026-06-23T00:42:06.291+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-06-23T00:42:06.312+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-23T00:42:06.313+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_random_users, task_id=extract, run_id=manual__2026-06-23T00:41:50.765275+00:00, execution_date=20260623T004150, start_date=20260623T004156, end_date=20260623T004206
+[2026-06-23T00:42:06.395+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-23T00:42:06.451+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-23T00:42:06.455+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

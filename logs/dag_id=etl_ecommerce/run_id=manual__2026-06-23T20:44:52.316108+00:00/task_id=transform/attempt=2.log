@@ -1,0 +1,30 @@
+[2026-06-23T20:55:40.613+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-23T20:55:40.629+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_ecommerce.transform manual__2026-06-23T20:44:52.316108+00:00 [queued]>
+[2026-06-23T20:55:40.636+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_ecommerce.transform manual__2026-06-23T20:44:52.316108+00:00 [queued]>
+[2026-06-23T20:55:40.637+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 3
+[2026-06-23T20:55:40.645+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): transform> on 2026-06-23 20:44:52.316108+00:00
+[2026-06-23T20:55:40.654+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_ecommerce', 'transform', 'manual__2026-06-23T20:44:52.316108+00:00', '--job-id', '112', '--raw', '--subdir', 'DAGS_FOLDER/etl_ecommerce_dag.py', '--cfg-path', '/tmp/tmpqb2d6jd3']
+[2026-06-23T20:55:40.656+0000] {standard_task_runner.py:105} INFO - Job 112: Subtask transform
+[2026-06-23T20:55:40.657+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=182) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-23T20:55:40.658+0000] {standard_task_runner.py:72} INFO - Started process 198 to run task
+[2026-06-23T20:55:40.691+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_ecommerce.transform manual__2026-06-23T20:44:52.316108+00:00 [running]> on host d2930d66fea2
+[2026-06-23T20:55:40.761+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='juan_camilo' AIRFLOW_CTX_DAG_ID='etl_ecommerce' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2026-06-23T20:44:52.316108+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-23T20:44:52.316108+00:00'
+[2026-06-23T20:55:40.762+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-23T20:55:44.379+0000] {etl_ecommerce_dag.py:147} INFO - Shape inicial: (541909, 8)
+[2026-06-23T20:55:44.687+0000] {etl_ecommerce_dag.py:151} INFO - Tras eliminar cancelaciones: (532621, 8)
+[2026-06-23T20:55:44.850+0000] {etl_ecommerce_dag.py:155} INFO - Tras eliminar sin CustomerID: (397924, 8)
+[2026-06-23T20:55:44.960+0000] {etl_ecommerce_dag.py:159} INFO - Tras filtrar cantidades/precios inválidos: (397884, 8)
+[2026-06-23T20:55:47.551+0000] {etl_ecommerce_dag.py:211} INFO - Shape final: (392692, 12)
+[2026-06-23T20:55:47.561+0000] {etl_ecommerce_dag.py:212} INFO - Segmentos de venta:
+segmento_venta
+Medio      195473
+Bajo       170009
+Alto        23157
+Premium      4053
+[2026-06-23T20:55:47.603+0000] {etl_ecommerce_dag.py:213} INFO - Países únicos: 37
+[2026-06-23T20:56:18.294+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-06-23T20:56:18.720+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-23T20:56:18.735+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_ecommerce, task_id=transform, run_id=manual__2026-06-23T20:44:52.316108+00:00, execution_date=20260623T204452, start_date=20260623T205540, end_date=20260623T205618
+[2026-06-23T20:56:19.031+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-23T20:56:19.399+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-23T20:56:19.402+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

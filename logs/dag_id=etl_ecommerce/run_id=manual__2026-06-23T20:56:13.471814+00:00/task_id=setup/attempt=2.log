@@ -1,0 +1,23 @@
+[2026-06-23T20:59:19.383+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-23T20:59:19.394+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_ecommerce.setup manual__2026-06-23T20:56:13.471814+00:00 [queued]>
+[2026-06-23T20:59:19.397+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_ecommerce.setup manual__2026-06-23T20:56:13.471814+00:00 [queued]>
+[2026-06-23T20:59:19.398+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 3
+[2026-06-23T20:59:19.404+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): setup> on 2026-06-23 20:56:13.471814+00:00
+[2026-06-23T20:59:19.410+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_ecommerce', 'setup', 'manual__2026-06-23T20:56:13.471814+00:00', '--job-id', '128', '--raw', '--subdir', 'DAGS_FOLDER/etl_ecommerce_dag.py', '--cfg-path', '/tmp/tmpmz_t60j3']
+[2026-06-23T20:59:19.411+0000] {standard_task_runner.py:105} INFO - Job 128: Subtask setup
+[2026-06-23T20:59:19.411+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=325) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-23T20:59:19.412+0000] {standard_task_runner.py:72} INFO - Started process 327 to run task
+[2026-06-23T20:59:19.437+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_ecommerce.setup manual__2026-06-23T20:56:13.471814+00:00 [running]> on host d2930d66fea2
+[2026-06-23T20:59:19.481+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='juan_camilo' AIRFLOW_CTX_DAG_ID='etl_ecommerce' AIRFLOW_CTX_TASK_ID='setup' AIRFLOW_CTX_EXECUTION_DATE='2026-06-23T20:56:13.471814+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-23T20:56:13.471814+00:00'
+[2026-06-23T20:59:19.481+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-23T20:59:19.490+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-06-23T20:59:19.490+0000] {base.py:84} INFO - Retrieving connection 'postgres_destino'
+[2026-06-23T20:59:20.217+0000] {etl_ecommerce_dag.py:49} INFO - ✅ Conexión a Supabase exitosa.
+[2026-06-23T20:59:20.217+0000] {etl_ecommerce_dag.py:50} INFO -    PostgreSQL version: PostgreSQL 17.6 on aarch64-unknown-linux-gnu, compiled by gcc (GCC) 15.2.0, 64-bit
+[2026-06-23T20:59:20.315+0000] {etl_ecommerce_dag.py:69} INFO - ✅ Kaggle autenticado correctamente. Usuario: camiloguengue
+[2026-06-23T20:59:20.315+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-06-23T20:59:20.323+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-23T20:59:20.323+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_ecommerce, task_id=setup, run_id=manual__2026-06-23T20:56:13.471814+00:00, execution_date=20260623T205613, start_date=20260623T205919, end_date=20260623T205920
+[2026-06-23T20:59:20.347+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-23T20:59:20.373+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-23T20:59:20.374+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

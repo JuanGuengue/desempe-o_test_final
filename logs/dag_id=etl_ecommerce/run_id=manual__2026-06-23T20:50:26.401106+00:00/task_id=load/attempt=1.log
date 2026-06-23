@@ -1,0 +1,500 @@
+[2026-06-23T20:56:20.471+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-23T20:56:20.486+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_ecommerce.load manual__2026-06-23T20:50:26.401106+00:00 [queued]>
+[2026-06-23T20:56:20.493+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_ecommerce.load manual__2026-06-23T20:50:26.401106+00:00 [queued]>
+[2026-06-23T20:56:20.493+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2026-06-23T20:56:20.503+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): load> on 2026-06-23 20:50:26.401106+00:00
+[2026-06-23T20:56:20.510+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_ecommerce', 'load', 'manual__2026-06-23T20:50:26.401106+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/etl_ecommerce_dag.py', '--cfg-path', '/tmp/tmprodgcq_v']
+[2026-06-23T20:56:20.512+0000] {standard_task_runner.py:105} INFO - Job 117: Subtask load
+[2026-06-23T20:56:20.512+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=214) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-23T20:56:20.513+0000] {standard_task_runner.py:72} INFO - Started process 221 to run task
+[2026-06-23T20:56:20.541+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_ecommerce.load manual__2026-06-23T20:50:26.401106+00:00 [running]> on host d2930d66fea2
+[2026-06-23T20:56:20.593+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='juan_camilo' AIRFLOW_CTX_DAG_ID='etl_ecommerce' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2026-06-23T20:50:26.401106+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-23T20:50:26.401106+00:00'
+[2026-06-23T20:56:20.594+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-23T20:56:23.453+0000] {etl_ecommerce_dag.py:226} INFO - Cargando 392692 registros en Supabase...
+[2026-06-23T20:56:23.454+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-06-23T20:56:23.454+0000] {base.py:84} INFO - Retrieving connection 'postgres_destino'
+[2026-06-23T20:56:24.428+0000] {etl_ecommerce_dag.py:254} INFO - Tabla 'ecommerce_transacciones' lista.
+[2026-06-23T21:09:49.580+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536488/21190: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:50.305+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536488/21894: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:51.069+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536488/70007: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:51.806+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536488/22940: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:52.592+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536488/70007: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:53.279+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536488/84347: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:54.003+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536488/22150: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:54.760+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536488/22149: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:55.612+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536488/22144: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:56.305+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/21622: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:57.038+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/46000M: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:57.803+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/22630: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:58.608+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/22616: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:59.371+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/22712: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:09:59.999+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/22983: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:00.741+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/22024: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:01.503+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/22113: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:02.221+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/84029E: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:02.915+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/21488: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:03.581+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/22900: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:04.316+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/22895: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:05.152+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/21035: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:05.920+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/21755: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:06.548+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536500/21754: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:07.275+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536502/84879: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:08.021+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536502/22784: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:08.804+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536502/21441: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:09.650+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536502/85123A: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:10.377+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536502/22423: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:11.071+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536508/84947: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:11.726+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536508/21326: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:12.461+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536514/22865: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:13.133+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536514/22485: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:13.903+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536514/22807: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:14.652+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536514/22633: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:15.370+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536514/22866: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:16.023+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/21794: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:16.731+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/20707: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:17.442+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/21175: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:18.167+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22926: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:18.918+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22588: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:19.592+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/21292: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:20.343+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/21890: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:21.057+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22632: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:21.766+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22633: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:22.497+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22670: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:23.267+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/21867: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:23.946+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22760: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:24.647+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22107: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:25.347+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22470: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:26.057+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/21486: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:26.684+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22151: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:27.381+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22643: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:28.118+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22642: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:28.889+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22604: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:29.731+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22099: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:30.421+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22553: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:31.223+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22551: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:31.939+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22653: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:32.553+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22557: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:33.267+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22906: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:34.027+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22754: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:34.791+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22938: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:10:35.549+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536520/22812: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:36.521+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536526/22411: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:37.215+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536526/22113: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:37.982+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/22809: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:38.613+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/84347: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:39.367+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/84945: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:40.042+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/22242: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:40.750+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/22244: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:41.448+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/22243: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:42.206+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/47421: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:42.867+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/20712: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:43.488+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/20713: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:44.262+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/22837: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:45.029+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/22969: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:45.847+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/22973: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:46.615+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/84569B: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:47.351+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/22549: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:48.170+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536527/POST: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:48.886+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22815: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:49.581+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22865: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:50.301+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22585: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:51.058+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/21587: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:51.834+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/84985A: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:52.599+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/85114B: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:53.213+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22813: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:53.874+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22128: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:54.593+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22839: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:55.346+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22584: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:56.056+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22130: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:56.831+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22938: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:57.439+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22411: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:58.201+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/21731: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:58.935+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22616: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:12:59.677+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22454: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:00.358+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/21992: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:01.119+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22326: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:01.896+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22082: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:02.615+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/85049E: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:03.333+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22077: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:04.071+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/85049A: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:04.817+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22865: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:05.570+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22867: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:06.222+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22910: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:06.877+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22963: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:07.546+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22960: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:08.274+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/85114C: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:09.038+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22974: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:09.733+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22423: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:10.448+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/21452: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:11.144+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22938: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:11.903+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22812: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:12.624+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22744: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:13.357+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22743: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:14.094+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22911: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:14.854+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22585: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:15.673+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22900: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:16.471+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22961: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
+[2026-06-23T21:13:17.312+0000] {etl_ecommerce_dag.py:301} WARNING - ⚠️ Error en registro 536528/22454: relation "ecommerce_transacciones" does not exist
+LINE 1: SELECT 1 FROM ecommerce_transacciones WHERE invoice_no = '53...
+                      ^
+
