@@ -383,3 +383,192 @@
 [2026-06-24T00:27:44.640+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:27:44.640+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2026-06-24T00:27:44.656+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:27:44.656+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
 [2026-06-24T00:27:44.667+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.229 seconds
+[2026-06-24T00:28:14.689+0000] {processor.py:186} INFO - Started process (PID=3176) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:28:14.690+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:28:14.691+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:28:14.691+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:28:14.861+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:28:14.878+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:28:14.878+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:28:14.892+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:28:14.892+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:28:14.902+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.216 seconds
+[2026-06-24T00:28:45.180+0000] {processor.py:186} INFO - Started process (PID=3182) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:28:45.181+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:28:45.183+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:28:45.182+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:28:45.343+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:28:45.359+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:28:45.359+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:28:45.372+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:28:45.371+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:28:45.381+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.204 seconds
+[2026-06-24T00:29:15.463+0000] {processor.py:186} INFO - Started process (PID=3188) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:29:15.464+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:29:15.466+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:29:15.466+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:29:15.642+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:29:15.659+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:29:15.659+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:29:15.674+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:29:15.674+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:29:15.686+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.227 seconds
+[2026-06-24T00:29:45.876+0000] {processor.py:186} INFO - Started process (PID=3194) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:29:45.877+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:29:45.879+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:29:45.879+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:29:46.054+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:29:46.070+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:29:46.070+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:29:46.085+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:29:46.084+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:29:46.095+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.225 seconds
+[2026-06-24T00:30:16.182+0000] {processor.py:186} INFO - Started process (PID=3200) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:30:16.182+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:30:16.185+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:30:16.184+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:30:16.359+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:30:16.377+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:30:16.377+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:30:16.391+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:30:16.391+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:30:16.403+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.225 seconds
+[2026-06-24T00:30:46.602+0000] {processor.py:186} INFO - Started process (PID=3206) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:30:46.602+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:30:46.604+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:30:46.604+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:30:46.782+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:30:46.800+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:30:46.799+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:30:46.814+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:30:46.814+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:30:46.825+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.227 seconds
+[2026-06-24T00:31:16.884+0000] {processor.py:186} INFO - Started process (PID=3212) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:31:16.885+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:31:16.886+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:31:16.886+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:31:17.071+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:31:17.091+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:31:17.091+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:31:17.107+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:31:17.107+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:31:17.121+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.240 seconds
+[2026-06-24T00:31:47.329+0000] {processor.py:186} INFO - Started process (PID=3218) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:31:47.330+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:31:47.331+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:31:47.331+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:31:47.509+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:31:47.526+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:31:47.526+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:31:47.541+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:31:47.541+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:31:47.552+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.227 seconds
+[2026-06-24T00:32:17.792+0000] {processor.py:186} INFO - Started process (PID=3224) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:32:17.792+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:32:17.794+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:32:17.794+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:32:17.973+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:32:17.991+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:32:17.990+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:32:18.005+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:32:18.005+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:32:18.015+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.229 seconds
+[2026-06-24T00:32:48.050+0000] {processor.py:186} INFO - Started process (PID=3230) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:32:48.050+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:32:48.053+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:32:48.052+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:32:48.227+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:32:48.244+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:32:48.244+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:32:48.258+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:32:48.258+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:32:48.268+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.223 seconds
+[2026-06-24T00:33:18.446+0000] {processor.py:186} INFO - Started process (PID=3236) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:33:18.447+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:33:18.449+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:33:18.449+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:33:18.623+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:33:18.639+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:33:18.639+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:33:18.653+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:33:18.652+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:33:18.663+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.222 seconds
+[2026-06-24T00:33:48.734+0000] {processor.py:186} INFO - Started process (PID=3242) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:33:48.735+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:33:48.736+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:33:48.736+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:33:48.909+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:33:48.926+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:33:48.926+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:33:48.941+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:33:48.941+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:33:48.952+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.221 seconds
+[2026-06-24T00:34:19.174+0000] {processor.py:186} INFO - Started process (PID=3248) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:34:19.175+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:34:19.176+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:34:19.176+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:34:19.363+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:34:19.382+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:34:19.382+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:34:19.398+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:34:19.398+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:34:19.409+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.239 seconds
+[2026-06-24T00:34:49.444+0000] {processor.py:186} INFO - Started process (PID=3254) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:34:49.445+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:34:49.446+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:34:49.446+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:34:49.626+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:34:49.643+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:34:49.643+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:34:49.657+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:34:49.657+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:34:49.667+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.226 seconds
+[2026-06-24T00:35:19.881+0000] {processor.py:186} INFO - Started process (PID=3260) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:35:19.882+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:35:19.883+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:35:19.883+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:35:20.064+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:35:20.081+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:35:20.081+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:35:20.096+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:35:20.096+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:35:20.109+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.231 seconds
+[2026-06-24T00:35:50.179+0000] {processor.py:186} INFO - Started process (PID=3266) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:35:50.181+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:35:50.183+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:35:50.183+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:35:50.354+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:35:50.371+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:35:50.370+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:35:50.385+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:35:50.385+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:35:50.394+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.220 seconds
+[2026-06-24T00:36:20.615+0000] {processor.py:186} INFO - Started process (PID=3272) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:36:20.616+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:36:20.617+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:36:20.617+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:36:20.790+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:36:20.807+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:36:20.807+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:36:20.820+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:36:20.820+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:36:20.830+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.219 seconds
+[2026-06-24T00:36:50.914+0000] {processor.py:186} INFO - Started process (PID=3278) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:36:50.914+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:36:50.916+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:36:50.915+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:36:51.080+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:36:51.096+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:36:51.096+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:36:51.109+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:36:51.109+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:36:51.119+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.210 seconds
+[2026-06-24T00:37:21.279+0000] {processor.py:186} INFO - Started process (PID=3284) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:37:21.280+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:37:21.283+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:37:21.282+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:37:21.454+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:37:21.471+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:37:21.471+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:37:21.484+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:37:21.484+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:37:21.494+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.220 seconds
+[2026-06-24T00:37:51.553+0000] {processor.py:186} INFO - Started process (PID=3290) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:37:51.554+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:37:51.555+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:37:51.555+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:37:51.735+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:37:51.751+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:37:51.751+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:37:51.766+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:37:51.766+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:37:51.775+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.226 seconds
+[2026-06-24T00:38:21.961+0000] {processor.py:186} INFO - Started process (PID=3296) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:38:21.962+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:38:21.964+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:38:21.964+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:38:22.136+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:38:22.154+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:38:22.154+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:38:22.170+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:38:22.170+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:38:22.181+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.228 seconds
+[2026-06-24T00:38:52.235+0000] {processor.py:186} INFO - Started process (PID=3302) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:38:52.236+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:38:52.238+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:38:52.238+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:38:52.416+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:38:52.432+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:38:52.432+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:38:52.446+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:38:52.445+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:38:52.456+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.226 seconds
+[2026-06-24T00:39:22.665+0000] {processor.py:186} INFO - Started process (PID=3308) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:39:22.666+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:39:22.668+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:39:22.668+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:39:22.843+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:39:22.860+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:39:22.860+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:39:22.874+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:39:22.874+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:39:22.886+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.224 seconds
+[2026-06-24T00:39:53.095+0000] {processor.py:186} INFO - Started process (PID=3314) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:39:53.096+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:39:53.098+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:39:53.098+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:39:53.270+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:39:53.287+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:39:53.287+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:39:53.302+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:39:53.302+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:39:53.314+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.225 seconds
+[2026-06-24T00:40:23.575+0000] {processor.py:186} INFO - Started process (PID=3320) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:40:23.576+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:40:23.578+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:40:23.578+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:40:23.759+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:40:23.777+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:40:23.777+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:40:23.792+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:40:23.792+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:40:23.802+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.232 seconds
+[2026-06-24T00:40:54.072+0000] {processor.py:186} INFO - Started process (PID=3326) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:40:54.073+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:40:54.075+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:40:54.074+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:40:54.249+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:40:54.266+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:40:54.265+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:40:54.279+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:40:54.279+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:40:54.289+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.222 seconds
+[2026-06-24T00:41:24.358+0000] {processor.py:186} INFO - Started process (PID=3332) to work on /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:41:24.358+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_ecommerce_dag.py for tasks to queue
+[2026-06-24T00:41:24.360+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:41:24.359+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:41:24.532+0000] {processor.py:925} INFO - DAG(s) 'etl_ecommerce' retrieved from /opt/airflow/dags/etl_ecommerce_dag.py
+[2026-06-24T00:41:24.548+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:41:24.548+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-06-24T00:41:24.562+0000] {logging_mixin.py:190} INFO - [2026-06-24T00:41:24.562+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_ecommerce to 2026-06-23 06:00:00+00:00, run_after=2026-06-24 06:00:00+00:00
+[2026-06-24T00:41:24.574+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_ecommerce_dag.py took 0.220 seconds
