@@ -35,7 +35,7 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      AIRFLOW_CONN_POSTGRES_DESTINO: "postgresql://postgres.wobqhsfcniawpssamvbu:Ppf6DhxBu7erDQmA@aws-1-us-east-2.pooler.supabase.com:5432/postgres?sslmode=require"
+      AIRFLOW_CONN_POSTGRES_DESTINO: ${AIRFLOW_CONN_POSTGRES_DESTINO}
       KAGGLE_USERNAME: ${KAGGLE_USERNAME}
       KAGGLE_KEY: ${KAGGLE_KEY}
     command: >
