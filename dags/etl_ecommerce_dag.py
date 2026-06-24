@@ -22,6 +22,7 @@ import os
 # ─────────────────────────────────────────────
 POSTGRES_CONN_ID = "postgres_destino"
 TARGET_TABLE     = "ecommerce_transacciones"
+TARGET_TABLE_RAW    = "ecommerce_transacciones_raw"
 LOCAL_DATA_PATH  = "/opt/airflow/data"
 KAGGLE_DATASET   = "carrie1/ecommerce-data"
 CSV_FILENAME     = "data.csv"
@@ -29,7 +30,7 @@ CSV_FILENAME     = "data.csv"
 default_args = {
     "owner": "juan_camilo",
     "retries": 2,
-    "retry_delay": timedelta(minutes=3),
+    "retry_delay": timedelta(minutes=3),      
     "email_on_failure": False,
 }
 
@@ -217,6 +218,74 @@ def transform(**context):
 
 
 # ─────────────────────────────────────────────
+# TAREA 3B — LOAD RAW (Bronze)
+# ─────────────────────────────────────────────
+def load_raw(**context):
+    from psycopg2.extras import execute_values
+
+    raw_path = os.path.join(LOCAL_DATA_PATH, "raw", CSV_FILENAME)
+    df = pd.read_csv(raw_path, encoding="latin-1", dtype=str)
+    df = df.where(pd.notnull(df), None)
+
+    logging.info(f"Registros crudos a cargar: {len(df)}")
+
+    hook   = PostgresHook(postgres_conn_id=POSTGRES_CONN_ID)
+    conn   = hook.get_conn()
+    cursor = conn.cursor()
+
+    # Crear tabla si no existe
+    cursor.execute(f"""
+        CREATE TABLE IF NOT EXISTS {TARGET_TABLE_RAW} (
+            id            SERIAL PRIMARY KEY,
+            invoice_no    TEXT,
+            stock_code    TEXT,
+            description   TEXT,
+            quantity      TEXT,
+            invoice_date  TEXT,
+            unit_price    TEXT,
+            customer_id   TEXT,
+            country       TEXT,
+            fecha_ingesta TIMESTAMP DEFAULT NOW()
+        );
+    """)
+
+    # Limpiar antes de insertar — evita acumulación en reintento
+    cursor.execute(f"TRUNCATE TABLE {TARGET_TABLE_RAW} RESTART IDENTITY;")
+    conn.commit()
+    logging.info("Tabla Bronze limpiada, insertando datos frescos...")
+
+    BATCH_SIZE = 5000   
+    total      = len(df)
+    insertados = 0
+
+    for i in range(0, total, BATCH_SIZE):
+        batch = df.iloc[i:i+BATCH_SIZE]
+
+        valores = [
+            (
+                r.get("InvoiceNo"),  r.get("StockCode"), r.get("Description"),
+                r.get("Quantity"),   r.get("InvoiceDate"), r.get("UnitPrice"),
+                r.get("CustomerID"), r.get("Country")
+            )
+            for _, r in batch.iterrows()
+        ]
+
+        execute_values(cursor, f"""
+            INSERT INTO {TARGET_TABLE_RAW} (
+                invoice_no, stock_code, description, quantity,
+                invoice_date, unit_price, customer_id, country
+            ) VALUES %s;
+        """, valores)
+
+        conn.commit()
+        insertados += len(batch)
+        logging.info(f"  Bronze — Lote {i//BATCH_SIZE + 1} — {insertados}/{total}")
+
+    cursor.close()
+    conn.close()
+    logging.info(f"✅ Bronze cargado — {insertados} registros en '{TARGET_TABLE_RAW}'")
+
+# ─────────────────────────────────────────────
 # TAREA 4 — LOAD
 # ─────────────────────────────────────────────
 def load(**context):
@@ -375,6 +444,10 @@ with DAG(
         task_id="transform",
         python_callable=transform,
     )
+    t_load_raw = PythonOperator(
+        task_id="load_raw",
+        python_callable=load_raw,
+    )
     t_load = PythonOperator(
         task_id="load",
         python_callable=load,
@@ -388,4 +461,4 @@ with DAG(
         python_callable=notify,
     )
 
-    t_setup >> t_extract >> t_save_raw >> t_transform >> t_load >> t_save_local >> t_notify
+    t_setup >> t_extract >> t_save_raw >> t_transform >> t_load_raw >> t_load >> t_save_local >> t_notify

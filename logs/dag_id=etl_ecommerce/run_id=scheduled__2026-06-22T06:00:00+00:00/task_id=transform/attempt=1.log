@@ -142,3 +142,34 @@ ValueError: time data "12/13/2010 9:02" doesn't match format "%d/%m/%Y %H:%M", a
 [2026-06-23T20:51:22.399+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
 [2026-06-23T20:51:22.426+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
 [2026-06-23T20:51:22.427+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-06-23T22:23:31.498+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-23T22:23:31.511+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_ecommerce.transform scheduled__2026-06-22T06:00:00+00:00 [queued]>
+[2026-06-23T22:23:31.516+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_ecommerce.transform scheduled__2026-06-22T06:00:00+00:00 [queued]>
+[2026-06-23T22:23:31.517+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2026-06-23T22:23:31.523+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): transform> on 2026-06-22 06:00:00+00:00
+[2026-06-23T22:23:31.529+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1672) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-23T22:23:31.530+0000] {standard_task_runner.py:72} INFO - Started process 1674 to run task
+[2026-06-23T22:23:31.529+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_ecommerce', 'transform', 'scheduled__2026-06-22T06:00:00+00:00', '--job-id', '193', '--raw', '--subdir', 'DAGS_FOLDER/etl_ecommerce_dag.py', '--cfg-path', '/tmp/tmpv6s48r09']
+[2026-06-23T22:23:31.530+0000] {standard_task_runner.py:105} INFO - Job 193: Subtask transform
+[2026-06-23T22:23:31.558+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_ecommerce.transform scheduled__2026-06-22T06:00:00+00:00 [running]> on host d2930d66fea2
+[2026-06-23T22:23:31.619+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='juan_camilo' AIRFLOW_CTX_DAG_ID='etl_ecommerce' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2026-06-22T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-22T06:00:00+00:00'
+[2026-06-23T22:23:31.619+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-23T22:23:34.557+0000] {etl_ecommerce_dag.py:147} INFO - Shape inicial: (541909, 8)
+[2026-06-23T22:23:34.739+0000] {etl_ecommerce_dag.py:151} INFO - Tras eliminar cancelaciones: (532621, 8)
+[2026-06-23T22:23:34.803+0000] {etl_ecommerce_dag.py:155} INFO - Tras eliminar sin CustomerID: (397924, 8)
+[2026-06-23T22:23:34.850+0000] {etl_ecommerce_dag.py:159} INFO - Tras filtrar cantidades/precios inválidos: (397884, 8)
+[2026-06-23T22:23:36.785+0000] {etl_ecommerce_dag.py:208} INFO - Shape tras deduplicar: (387841, 11)
+[2026-06-23T22:23:36.786+0000] {etl_ecommerce_dag.py:213} INFO - Shape final: (387841, 12)
+[2026-06-23T22:23:36.796+0000] {etl_ecommerce_dag.py:214} INFO - Segmentos de venta:
+segmento_venta
+Medio      194945
+Bajo       165744
+Alto        23114
+Premium      4038
+[2026-06-23T22:23:36.816+0000] {etl_ecommerce_dag.py:215} INFO - Países únicos: 37
+[2026-06-23T22:23:42.159+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-06-23T22:23:42.167+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-23T22:23:42.167+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_ecommerce, task_id=transform, run_id=scheduled__2026-06-22T06:00:00+00:00, execution_date=20260622T060000, start_date=20260623T222331, end_date=20260623T222342
+[2026-06-23T22:23:42.219+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-23T22:23:42.254+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-23T22:23:42.255+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

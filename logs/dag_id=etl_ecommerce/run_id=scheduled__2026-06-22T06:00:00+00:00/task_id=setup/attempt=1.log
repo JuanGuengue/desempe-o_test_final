@@ -103,3 +103,26 @@ ValueError: ❌ Credenciales de Kaggle no encontradas. Verifica KAGGLE_USER y KA
 [2026-06-23T20:44:53.821+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
 [2026-06-23T20:44:53.836+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
 [2026-06-23T20:44:53.837+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-06-23T22:23:14.691+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-23T22:23:14.703+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_ecommerce.setup scheduled__2026-06-22T06:00:00+00:00 [queued]>
+[2026-06-23T22:23:14.708+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_ecommerce.setup scheduled__2026-06-22T06:00:00+00:00 [queued]>
+[2026-06-23T22:23:14.709+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2026-06-23T22:23:14.716+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): setup> on 2026-06-22 06:00:00+00:00
+[2026-06-23T22:23:14.722+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1659) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-23T22:23:14.723+0000] {standard_task_runner.py:72} INFO - Started process 1661 to run task
+[2026-06-23T22:23:14.722+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_ecommerce', 'setup', 'scheduled__2026-06-22T06:00:00+00:00', '--job-id', '190', '--raw', '--subdir', 'DAGS_FOLDER/etl_ecommerce_dag.py', '--cfg-path', '/tmp/tmp0x9jkwwb']
+[2026-06-23T22:23:14.723+0000] {standard_task_runner.py:105} INFO - Job 190: Subtask setup
+[2026-06-23T22:23:14.754+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_ecommerce.setup scheduled__2026-06-22T06:00:00+00:00 [running]> on host d2930d66fea2
+[2026-06-23T22:23:14.801+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='juan_camilo' AIRFLOW_CTX_DAG_ID='etl_ecommerce' AIRFLOW_CTX_TASK_ID='setup' AIRFLOW_CTX_EXECUTION_DATE='2026-06-22T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-22T06:00:00+00:00'
+[2026-06-23T22:23:14.802+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-23T22:23:14.810+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-06-23T22:23:14.811+0000] {base.py:84} INFO - Retrieving connection 'postgres_destino'
+[2026-06-23T22:23:15.611+0000] {etl_ecommerce_dag.py:50} INFO - ✅ Conexión a Supabase exitosa.
+[2026-06-23T22:23:15.611+0000] {etl_ecommerce_dag.py:51} INFO -    PostgreSQL version: PostgreSQL 17.6 on aarch64-unknown-linux-gnu, compiled by gcc (GCC) 15.2.0, 64-bit
+[2026-06-23T22:23:15.727+0000] {etl_ecommerce_dag.py:70} INFO - ✅ Kaggle autenticado correctamente. Usuario: camiloguengue
+[2026-06-23T22:23:15.728+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-06-23T22:23:15.735+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-23T22:23:15.736+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_ecommerce, task_id=setup, run_id=scheduled__2026-06-22T06:00:00+00:00, execution_date=20260622T060000, start_date=20260623T222314, end_date=20260623T222315
+[2026-06-23T22:23:15.779+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-23T22:23:15.800+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-23T22:23:15.801+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

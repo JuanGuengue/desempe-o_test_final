@@ -1,0 +1,334 @@
+[2026-06-23T22:08:25.194+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-23T22:08:25.211+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_ecommerce.load_raw manual__2026-06-23T20:49:02.808373+00:00 [queued]>
+[2026-06-23T22:08:25.217+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_ecommerce.load_raw manual__2026-06-23T20:49:02.808373+00:00 [queued]>
+[2026-06-23T22:08:25.218+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2026-06-23T22:08:25.229+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): load_raw> on 2026-06-23 20:49:02.808373+00:00
+[2026-06-23T22:08:25.235+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1371) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-23T22:08:25.236+0000] {standard_task_runner.py:72} INFO - Started process 1388 to run task
+[2026-06-23T22:08:25.236+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_ecommerce', 'load_raw', 'manual__2026-06-23T20:49:02.808373+00:00', '--job-id', '176', '--raw', '--subdir', 'DAGS_FOLDER/etl_ecommerce_dag.py', '--cfg-path', '/tmp/tmpx3x71d5s']
+[2026-06-23T22:08:25.237+0000] {standard_task_runner.py:105} INFO - Job 176: Subtask load_raw
+[2026-06-23T22:08:25.272+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_ecommerce.load_raw manual__2026-06-23T20:49:02.808373+00:00 [running]> on host d2930d66fea2
+[2026-06-23T22:08:25.339+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='juan_camilo' AIRFLOW_CTX_DAG_ID='etl_ecommerce' AIRFLOW_CTX_TASK_ID='load_raw' AIRFLOW_CTX_EXECUTION_DATE='2026-06-23T20:49:02.808373+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-23T20:49:02.808373+00:00'
+[2026-06-23T22:08:25.340+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-23T22:08:25.977+0000] {etl_ecommerce_dag.py:236} INFO - Registros crudos a cargar: 541909
+[2026-06-23T22:08:25.978+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-06-23T22:08:25.978+0000] {base.py:84} INFO - Retrieving connection 'postgres_destino'
+[2026-06-23T22:08:26.760+0000] {etl_ecommerce_dag.py:258} INFO - Tabla Bronze 'ecommerce_transacciones_raw' lista.
+[2026-06-23T22:08:27.801+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 1 — 1000/541909
+[2026-06-23T22:08:28.834+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 2 — 2000/541909
+[2026-06-23T22:08:29.859+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 3 — 3000/541909
+[2026-06-23T22:08:30.879+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 4 — 4000/541909
+[2026-06-23T22:08:31.920+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 5 — 5000/541909
+[2026-06-23T22:08:32.953+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 6 — 6000/541909
+[2026-06-23T22:08:33.991+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 7 — 7000/541909
+[2026-06-23T22:08:35.024+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 8 — 8000/541909
+[2026-06-23T22:08:36.067+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 9 — 9000/541909
+[2026-06-23T22:08:37.102+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 10 — 10000/541909
+[2026-06-23T22:08:38.145+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 11 — 11000/541909
+[2026-06-23T22:08:39.179+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 12 — 12000/541909
+[2026-06-23T22:08:40.196+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 13 — 13000/541909
+[2026-06-23T22:08:41.233+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 14 — 14000/541909
+[2026-06-23T22:08:42.249+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 15 — 15000/541909
+[2026-06-23T22:08:43.274+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 16 — 16000/541909
+[2026-06-23T22:08:44.300+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 17 — 17000/541909
+[2026-06-23T22:08:45.335+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 18 — 18000/541909
+[2026-06-23T22:08:46.380+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 19 — 19000/541909
+[2026-06-23T22:08:47.403+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 20 — 20000/541909
+[2026-06-23T22:08:48.443+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 21 — 21000/541909
+[2026-06-23T22:08:49.476+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 22 — 22000/541909
+[2026-06-23T22:08:50.516+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 23 — 23000/541909
+[2026-06-23T22:08:51.560+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 24 — 24000/541909
+[2026-06-23T22:08:52.609+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 25 — 25000/541909
+[2026-06-23T22:08:53.651+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 26 — 26000/541909
+[2026-06-23T22:08:54.710+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 27 — 27000/541909
+[2026-06-23T22:08:55.746+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 28 — 28000/541909
+[2026-06-23T22:08:56.777+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 29 — 29000/541909
+[2026-06-23T22:08:57.835+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 30 — 30000/541909
+[2026-06-23T22:08:58.868+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 31 — 31000/541909
+[2026-06-23T22:08:59.878+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 32 — 32000/541909
+[2026-06-23T22:09:00.888+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 33 — 33000/541909
+[2026-06-23T22:09:01.914+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 34 — 34000/541909
+[2026-06-23T22:09:02.943+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 35 — 35000/541909
+[2026-06-23T22:09:03.980+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 36 — 36000/541909
+[2026-06-23T22:09:05.001+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 37 — 37000/541909
+[2026-06-23T22:09:06.029+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 38 — 38000/541909
+[2026-06-23T22:09:07.050+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 39 — 39000/541909
+[2026-06-23T22:09:08.107+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 40 — 40000/541909
+[2026-06-23T22:09:09.132+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 41 — 41000/541909
+[2026-06-23T22:09:10.157+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 42 — 42000/541909
+[2026-06-23T22:09:11.193+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 43 — 43000/541909
+[2026-06-23T22:09:12.247+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 44 — 44000/541909
+[2026-06-23T22:09:13.271+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 45 — 45000/541909
+[2026-06-23T22:09:14.302+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 46 — 46000/541909
+[2026-06-23T22:09:15.332+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 47 — 47000/541909
+[2026-06-23T22:09:16.364+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 48 — 48000/541909
+[2026-06-23T22:09:17.403+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 49 — 49000/541909
+[2026-06-23T22:09:18.434+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 50 — 50000/541909
+[2026-06-23T22:09:19.478+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 51 — 51000/541909
+[2026-06-23T22:09:20.493+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 52 — 52000/541909
+[2026-06-23T22:09:21.518+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 53 — 53000/541909
+[2026-06-23T22:09:22.554+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 54 — 54000/541909
+[2026-06-23T22:09:23.591+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 55 — 55000/541909
+[2026-06-23T22:09:24.616+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 56 — 56000/541909
+[2026-06-23T22:09:25.635+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 57 — 57000/541909
+[2026-06-23T22:09:26.670+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 58 — 58000/541909
+[2026-06-23T22:09:27.702+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 59 — 59000/541909
+[2026-06-23T22:09:28.714+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 60 — 60000/541909
+[2026-06-23T22:09:29.747+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 61 — 61000/541909
+[2026-06-23T22:09:30.809+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 62 — 62000/541909
+[2026-06-23T22:09:31.847+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 63 — 63000/541909
+[2026-06-23T22:09:32.869+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 64 — 64000/541909
+[2026-06-23T22:09:33.893+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 65 — 65000/541909
+[2026-06-23T22:09:34.935+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 66 — 66000/541909
+[2026-06-23T22:09:35.975+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 67 — 67000/541909
+[2026-06-23T22:09:37.014+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 68 — 68000/541909
+[2026-06-23T22:09:38.052+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 69 — 69000/541909
+[2026-06-23T22:09:39.077+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 70 — 70000/541909
+[2026-06-23T22:09:40.107+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 71 — 71000/541909
+[2026-06-23T22:09:41.144+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 72 — 72000/541909
+[2026-06-23T22:09:42.182+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 73 — 73000/541909
+[2026-06-23T22:09:43.209+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 74 — 74000/541909
+[2026-06-23T22:09:44.235+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 75 — 75000/541909
+[2026-06-23T22:09:45.281+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 76 — 76000/541909
+[2026-06-23T22:09:46.303+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 77 — 77000/541909
+[2026-06-23T22:09:47.343+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 78 — 78000/541909
+[2026-06-23T22:09:48.386+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 79 — 79000/541909
+[2026-06-23T22:09:49.418+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 80 — 80000/541909
+[2026-06-23T22:09:50.440+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 81 — 81000/541909
+[2026-06-23T22:09:51.482+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 82 — 82000/541909
+[2026-06-23T22:09:52.530+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 83 — 83000/541909
+[2026-06-23T22:09:53.541+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 84 — 84000/541909
+[2026-06-23T22:09:54.573+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 85 — 85000/541909
+[2026-06-23T22:09:55.605+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 86 — 86000/541909
+[2026-06-23T22:09:56.642+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 87 — 87000/541909
+[2026-06-23T22:09:57.672+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 88 — 88000/541909
+[2026-06-23T22:09:58.714+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 89 — 89000/541909
+[2026-06-23T22:09:59.744+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 90 — 90000/541909
+[2026-06-23T22:10:00.782+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 91 — 91000/541909
+[2026-06-23T22:10:01.818+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 92 — 92000/541909
+[2026-06-23T22:10:02.826+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 93 — 93000/541909
+[2026-06-23T22:10:03.848+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 94 — 94000/541909
+[2026-06-23T22:10:04.885+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 95 — 95000/541909
+[2026-06-23T22:10:05.908+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 96 — 96000/541909
+[2026-06-23T22:10:06.941+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 97 — 97000/541909
+[2026-06-23T22:10:07.981+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 98 — 98000/541909
+[2026-06-23T22:10:08.990+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 99 — 99000/541909
+[2026-06-23T22:10:10.020+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 100 — 100000/541909
+[2026-06-23T22:10:11.040+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 101 — 101000/541909
+[2026-06-23T22:10:12.072+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 102 — 102000/541909
+[2026-06-23T22:10:13.135+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 103 — 103000/541909
+[2026-06-23T22:10:14.162+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 104 — 104000/541909
+[2026-06-23T22:10:15.198+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 105 — 105000/541909
+[2026-06-23T22:10:16.218+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 106 — 106000/541909
+[2026-06-23T22:10:17.246+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 107 — 107000/541909
+[2026-06-23T22:10:18.271+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 108 — 108000/541909
+[2026-06-23T22:10:19.288+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 109 — 109000/541909
+[2026-06-23T22:10:20.299+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 110 — 110000/541909
+[2026-06-23T22:10:21.321+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 111 — 111000/541909
+[2026-06-23T22:10:22.339+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 112 — 112000/541909
+[2026-06-23T22:10:23.365+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 113 — 113000/541909
+[2026-06-23T22:10:24.417+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 114 — 114000/541909
+[2026-06-23T22:10:25.736+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 115 — 115000/541909
+[2026-06-23T22:10:26.774+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 116 — 116000/541909
+[2026-06-23T22:10:28.145+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 117 — 117000/541909
+[2026-06-23T22:10:29.473+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 118 — 118000/541909
+[2026-06-23T22:10:30.492+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 119 — 119000/541909
+[2026-06-23T22:10:31.566+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 120 — 120000/541909
+[2026-06-23T22:10:32.592+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 121 — 121000/541909
+[2026-06-23T22:10:33.638+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 122 — 122000/541909
+[2026-06-23T22:10:34.978+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 123 — 123000/541909
+[2026-06-23T22:10:36.012+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 124 — 124000/541909
+[2026-06-23T22:10:37.095+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 125 — 125000/541909
+[2026-06-23T22:10:38.125+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 126 — 126000/541909
+[2026-06-23T22:10:39.154+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 127 — 127000/541909
+[2026-06-23T22:10:40.171+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 128 — 128000/541909
+[2026-06-23T22:10:41.192+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 129 — 129000/541909
+[2026-06-23T22:10:42.227+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 130 — 130000/541909
+[2026-06-23T22:10:43.272+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 131 — 131000/541909
+[2026-06-23T22:10:44.297+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 132 — 132000/541909
+[2026-06-23T22:10:45.320+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 133 — 133000/541909
+[2026-06-23T22:10:46.356+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 134 — 134000/541909
+[2026-06-23T22:10:47.391+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 135 — 135000/541909
+[2026-06-23T22:10:48.415+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 136 — 136000/541909
+[2026-06-23T22:10:49.434+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 137 — 137000/541909
+[2026-06-23T22:10:51.036+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 138 — 138000/541909
+[2026-06-23T22:10:52.058+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 139 — 139000/541909
+[2026-06-23T22:10:53.082+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 140 — 140000/541909
+[2026-06-23T22:10:54.101+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 141 — 141000/541909
+[2026-06-23T22:10:55.114+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 142 — 142000/541909
+[2026-06-23T22:10:56.126+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 143 — 143000/541909
+[2026-06-23T22:10:57.177+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 144 — 144000/541909
+[2026-06-23T22:10:58.207+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 145 — 145000/541909
+[2026-06-23T22:10:59.241+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 146 — 146000/541909
+[2026-06-23T22:11:05.017+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 147 — 147000/541909
+[2026-06-23T22:11:06.051+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 148 — 148000/541909
+[2026-06-23T22:11:07.069+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 149 — 149000/541909
+[2026-06-23T22:11:08.109+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 150 — 150000/541909
+[2026-06-23T22:11:09.134+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 151 — 151000/541909
+[2026-06-23T22:11:10.154+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 152 — 152000/541909
+[2026-06-23T22:11:11.162+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 153 — 153000/541909
+[2026-06-23T22:11:12.178+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 154 — 154000/541909
+[2026-06-23T22:11:13.212+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 155 — 155000/541909
+[2026-06-23T22:11:14.260+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 156 — 156000/541909
+[2026-06-23T22:11:15.273+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 157 — 157000/541909
+[2026-06-23T22:11:16.283+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 158 — 158000/541909
+[2026-06-23T22:11:17.333+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 159 — 159000/541909
+[2026-06-23T22:11:18.377+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 160 — 160000/541909
+[2026-06-23T22:11:19.411+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 161 — 161000/541909
+[2026-06-23T22:11:20.447+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 162 — 162000/541909
+[2026-06-23T22:11:21.484+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 163 — 163000/541909
+[2026-06-23T22:11:22.522+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 164 — 164000/541909
+[2026-06-23T22:11:23.565+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 165 — 165000/541909
+[2026-06-23T22:11:24.615+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 166 — 166000/541909
+[2026-06-23T22:11:25.645+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 167 — 167000/541909
+[2026-06-23T22:11:26.720+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 168 — 168000/541909
+[2026-06-23T22:11:27.756+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 169 — 169000/541909
+[2026-06-23T22:11:28.807+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 170 — 170000/541909
+[2026-06-23T22:11:29.843+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 171 — 171000/541909
+[2026-06-23T22:11:30.983+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 172 — 172000/541909
+[2026-06-23T22:11:32.080+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 173 — 173000/541909
+[2026-06-23T22:11:33.166+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 174 — 174000/541909
+[2026-06-23T22:11:34.320+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 175 — 175000/541909
+[2026-06-23T22:11:35.407+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 176 — 176000/541909
+[2026-06-23T22:11:36.455+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 177 — 177000/541909
+[2026-06-23T22:11:37.492+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 178 — 178000/541909
+[2026-06-23T22:11:38.550+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 179 — 179000/541909
+[2026-06-23T22:11:39.611+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 180 — 180000/541909
+[2026-06-23T22:11:40.658+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 181 — 181000/541909
+[2026-06-23T22:11:41.700+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 182 — 182000/541909
+[2026-06-23T22:11:42.756+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 183 — 183000/541909
+[2026-06-23T22:11:43.804+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 184 — 184000/541909
+[2026-06-23T22:11:44.857+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 185 — 185000/541909
+[2026-06-23T22:11:45.896+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 186 — 186000/541909
+[2026-06-23T22:11:46.952+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 187 — 187000/541909
+[2026-06-23T22:11:48.000+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 188 — 188000/541909
+[2026-06-23T22:11:49.038+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 189 — 189000/541909
+[2026-06-23T22:11:50.086+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 190 — 190000/541909
+[2026-06-23T22:11:51.127+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 191 — 191000/541909
+[2026-06-23T22:11:52.177+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 192 — 192000/541909
+[2026-06-23T22:11:53.225+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 193 — 193000/541909
+[2026-06-23T22:11:54.283+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 194 — 194000/541909
+[2026-06-23T22:11:55.333+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 195 — 195000/541909
+[2026-06-23T22:11:56.378+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 196 — 196000/541909
+[2026-06-23T22:11:57.421+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 197 — 197000/541909
+[2026-06-23T22:11:58.467+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 198 — 198000/541909
+[2026-06-23T22:11:59.504+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 199 — 199000/541909
+[2026-06-23T22:12:00.563+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 200 — 200000/541909
+[2026-06-23T22:12:01.606+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 201 — 201000/541909
+[2026-06-23T22:12:02.639+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 202 — 202000/541909
+[2026-06-23T22:12:03.675+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 203 — 203000/541909
+[2026-06-23T22:12:04.704+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 204 — 204000/541909
+[2026-06-23T22:12:05.748+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 205 — 205000/541909
+[2026-06-23T22:12:06.837+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 206 — 206000/541909
+[2026-06-23T22:12:07.878+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 207 — 207000/541909
+[2026-06-23T22:12:08.929+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 208 — 208000/541909
+[2026-06-23T22:12:09.978+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 209 — 209000/541909
+[2026-06-23T22:12:11.019+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 210 — 210000/541909
+[2026-06-23T22:12:12.060+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 211 — 211000/541909
+[2026-06-23T22:12:13.080+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 212 — 212000/541909
+[2026-06-23T22:12:14.125+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 213 — 213000/541909
+[2026-06-23T22:12:15.176+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 214 — 214000/541909
+[2026-06-23T22:12:16.226+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 215 — 215000/541909
+[2026-06-23T22:12:17.272+0000] {etl_ecommerce_dag.py:285} INFO -   Bronze — Lote 216 — 216000/541909
+[2026-06-23T22:12:18.360+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl_ecommerce_dag.py", line 276, in load_raw
+    execute_values(cursor, f"""
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.UndefinedTable: relation "ecommerce_transacciones_raw" does not exist
+LINE 2:             INSERT INTO ecommerce_transacciones_raw (
+                                ^
+
+[2026-06-23T22:12:18.371+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_ecommerce, task_id=load_raw, run_id=manual__2026-06-23T20:49:02.808373+00:00, execution_date=20260623T204902, start_date=20260623T220825, end_date=20260623T221218
+[2026-06-23T22:12:18.402+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-23T22:12:18.403+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 176 for task load_raw (relation "ecommerce_transacciones_raw" does not exist
+LINE 2:             INSERT INTO ecommerce_transacciones_raw (
+                                ^
+; 1388)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl_ecommerce_dag.py", line 276, in load_raw
+    execute_values(cursor, f"""
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.UndefinedTable: relation "ecommerce_transacciones_raw" does not exist
+LINE 2:             INSERT INTO ecommerce_transacciones_raw (
+                                ^
+
+[2026-06-23T22:12:18.427+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-06-23T22:12:18.444+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-23T22:12:18.446+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
